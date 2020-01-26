@@ -19,3 +19,9 @@ GoogleLanValidation
     \    Dictionary Should Contain Value    ${dict_lang}    ${text}
     \    Click Element    //div[@id='SIvCob']/a[${i}]
     \    Go To    https://www.google.com
+
+FileUploadDownload
+    Open Browser    https://convertonlinefree.com/ImageToPDFEN.aspx    chrome
+    Maximize Browser Window
+    Choose File    //input[@id='MainContent_fu']    E:\\RobotFrameworkProject\\Assessments\\FileUploads\\car.gif
+    Click Element    //input[@name='ctl00$MainContent$btnConvert']
